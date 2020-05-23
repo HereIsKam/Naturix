@@ -1,0 +1,57 @@
+/* Defalut ends */
+a,
+span,
+::before,
+::after {
+  display: inline-flex;
+  color: inherit;
+  /*   Due to bootstrap styles: */
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: inherit;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: var(--colorBackground);
+  color: var(--colorMain);
+  font-family: 'Roboto';
+  font-size: 1rem;
+}
+
+/* Styles */
+
+/* Logo */
+.logo {
+  font-size: 1.875rem;
+  font-weight: 900;
+  line-height: 1;
+  position: relative;
+}
+
+.logo::before {
+  content: '';
+  background: url('../img/logo-leave.png') 0 0 / cover no-repeat;
+  width: 19px;
+  height: 31px;
+  position: absolute;
+  top: -25px;
+  left: 38px;
+
+}
+
+.logo-mid {
+  font-weight: 300;
+  margin: 0 20px 0 7px;
+}
+
+.logo-end {
+  font-size: 1.456rem;
+  font-weight: 500;
+  letter-spacing: 0.4em;
+}
