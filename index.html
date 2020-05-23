@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Naturix - Farmfood Organic Store</title>
+  <title>Naturix - Organic Farmfood Store</title>
   <!-- Fonts Awesome -->
   <script src="https://kit.fontawesome.com/c6a5670004.js" crossorigin="anonymous"></script>
   <!-- Bootstrap 4 -->
@@ -20,7 +20,7 @@
     <nav class="navbar d-flex justify-content-between align-items-center">
 
       <a href="index.html" class="logo d-flex align-items-end">
-        naturix
+        <span class="logo-begin">naturix</span>
         <span class="logo-mid">farmfood</span>
         <span class="logo-end">organic food</span>
       </a>
@@ -45,14 +45,29 @@
         </button>
       </div>
     </nav>
-
   </header>
 
+  <!-- Main -->
+  <main>
+    <!-- Hero -->
+    <section class="hero d-flex flex-column align-items-center">
+
+      <picture class="hero-picture distance-bottom-small">
+        <source type="image/webp" srcset="img/hero-organic.webp">
+        <source type="image/png" srcset="img/hero-organic.png">
+        <img src="img/hero-organic.png" alt="Organic food">
+      </picture>
+
+      <h1 class="distance-bottom-small">
+        live <span class="hero-title-accent">organic</span> for live <span class="hero-title-accent">healthy</span>
+      </h1>
+      <p class="hero-text">Organic fruits, vegetables, and lot more to your door</p>
+
+    </section>
 
 
 
-
-  <!-- JQuery -->
+  </main> <!-- JQuery -->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
   </script>

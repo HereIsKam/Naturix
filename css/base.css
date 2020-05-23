@@ -13,15 +13,18 @@ a:hover {
   color: inherit;
 }
 
-html {
-  font-size: 10px;
-}
+html {}
 
 body {
   background-color: var(--colorBackground);
   color: var(--colorMain);
   font-family: 'Roboto';
-  font-size: 1rem;
+  font-size: 1.6rem;
+}
+
+/* Spacing */
+.distance-bottom-small {
+  margin: 0 0 25px 0;
 }
 
 /* Styles */
@@ -34,15 +37,34 @@ body {
   position: relative;
 }
 
-.logo::before {
+.logo-begin::before {
   content: '';
   background: url('../img/logo-leave.png') 0 0 / cover no-repeat;
   width: 19px;
   height: 31px;
   position: absolute;
-  top: -25px;
-  left: 38px;
+  top: -23px;
+  left: 67px;
+}
 
+.logo::after {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: var(--colorNavAccent);
+  position: absolute;
+  bottom: -9px;
+  left: 0;
+  opacity: 0;
+  transition: width .1s, opacity .1s .1s;
+}
+
+.logo:hover:after,
+.logo:focus:after {
+  width: 100%;
+  opacity: 1;
+  transition: opacity .1s, width .1s .1s;
 }
 
 .logo-mid {
