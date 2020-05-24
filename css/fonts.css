@@ -4,6 +4,7 @@
     url('../fonts/Lora-Italic.woff') format('woff');
   font-weight: normal;
   font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
@@ -12,6 +13,7 @@
     url('Lora-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -20,6 +22,7 @@
     url('../fonts/Roboto-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -28,6 +31,7 @@
     url('../fonts/Roboto-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -36,6 +40,7 @@
     url('../fonts/Roboto-Italic.woff') format('woff');
   font-weight: normal;
   font-style: italic;
+  font-display: swap;
 }
 
 @font-face {
@@ -44,6 +49,7 @@
     url('../fonts/Roboto-Black.woff') format('woff');
   font-weight: 900;
   font-style: normal;
+  font-display: swap;
 }
 
 
@@ -53,6 +59,7 @@
     url('Roboto-Light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
+  font-display: swap;
 }
 
 
@@ -62,6 +69,7 @@
     url('../fonts/Roboto-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -70,6 +78,7 @@
     url('../fonts/GreatVibes-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -78,6 +87,7 @@
     url('../fonts/MyriadPro-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -86,6 +96,7 @@
     url('../fonts/MyriadPro-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -94,4 +105,5 @@
     url('../fonts/Poppins-SemiBold.woff') format('woff');
   font-weight: 600;
   font-style: normal;
+  font-display: swap;
 }
