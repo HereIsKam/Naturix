@@ -109,8 +109,9 @@
   text-transform: uppercase;
   margin: 0;
   position: relative;
+  transform-origin: center top;
   transform: rotate(-90deg);
-  transform-origin: 0 center;
+
 }
 
 .hero-left-text::before {
