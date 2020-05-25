@@ -103,15 +103,19 @@
   background: url('../img/hero-backgroung.png') center center / cover no-repeat;
 }
 
+.hero-left {
+  transform: rotate(-90deg);
+  white-space: nowrap;
+  transform-origin: 50% 0;
+}
+
 .hero-left-text {
   font-size: 0.938rem;
   font-weight: 500;
   text-transform: uppercase;
   margin: 0;
-  position: relative;
-  transform-origin: center top;
-  transform: rotate(-90deg);
-
+  display: flex;
+  align-items: center;
 }
 
 .hero-left-text::before {
@@ -119,10 +123,7 @@
   width: 70px;
   height: 1px;
   background-color: var(--colorDetails);
-  position: absolute;
-  top: 50%;
-  left: -78px;
-  transform: translateY(-50%);
+  margin: 0 8px 0 0;
 }
 
 
@@ -131,6 +132,7 @@
 .hero-picture {
   position: relative;
   z-index: 0;
+  height: auto;
 }
 
 .hero-picture::after {
@@ -138,7 +140,7 @@
   content: '100% Guarantee';
   font-size: 1rem;
   font-style: italic;
-  bottom: 12px;
+  bottom: -40px;
   left: 55%;
   white-space: nowrap;
 }
@@ -174,6 +176,8 @@
   font-weight: bold;
   margin-right: 5px;
 }
+
+.hero-right {}
 
 .hero-right a {
   font-size: 0.938rem;

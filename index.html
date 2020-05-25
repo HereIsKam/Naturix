@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Naturix - Organic Farmfood Store</title>
   <!-- Fonts Awesome -->
-  <script src="https://kit.fontawesome.com/c6a5670004.js" crossorigin="anonymous"></script>
+  <script async src="https://kit.fontawesome.com/c6a5670004.js" crossorigin="anonymous"></script>
   <!-- Bootstrap 4 -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -52,18 +52,17 @@
   <main>
     <!-- Hero -->
     <section class="hero container-fluid d-flex justify-content-between align-items-center">
-      <div class="hero-left">
+
+      <div class="hero-left col-1 d-flex justify-content-center align-items-end">
         <p class=" hero-left-text text-uppercase">Summer organic 2016</p>
       </div>
 
-
-      <div class="hero-mid text-center">
+      <div class="hero-mid text-center col-10">
         <picture class="hero-picture distance-bottom-small">
           <source type="image/webp" srcset="img/hero-organic.webp">
           <source type="image/png" srcset="img/hero-organic.png">
           <img src="img/hero-organic.png" alt="Organic food">
         </picture>
-
         <h1 class="distance-bottom-small ">
           live <span class="hero-title-accent ">organic</span> for live <span class="hero-title-accent">healthy</span>
         </h1>
@@ -74,16 +73,27 @@
         </a>
       </div>
 
-      <div class="hero-right d-flex flex-column align-items-center">
-        <a class="d-flex align-items-center justify-content-center fab fa-facebook-f"></a>
-        <a class="d-flex align-items-center justify-content-center fab fa-twitter"></a>
-        <a class="d-flex align-items-center justify-content-center fab fa-google-plus-g"></a>
-        <a class="d-flex align-items-center justify-content-center fab fa-linkedin-in"></a>
-        <a class="d-flex align-items-center justify-content-center fab fa-instagram"></a>
+      <div class="hero-right d-flex flex-column align-items-center col-1">
+        <a class="d-flex align-items-end justify-content-center fab fa-facebook-f">
+          <span class="sr-only">Facebook</span>
+        </a>
+        <a class="d-flex align-items-center justify-content-center fab fa-twitter"><span
+            class="sr-only">Twitter</span></a>
+        <a class="d-flex align-items-center justify-content-center fab fa-google-plus-g"><span
+            class="sr-only">Google+</span></a>
+        <a class="d-flex align-items-center justify-content-center fab fa-linkedin-in"><span
+            class="sr-only">LinkedIn</span></a>
+        <a class="d-flex align-items-center justify-content-center fab fa-instagram"><span
+            class="sr-only">Instagram</span></a>
       </div>
+    </section>
 
-
-
+    <section class="products">
+      <div class="container">
+        <button class="btn-general col-2">Organic
+          <span class="btn-general-accent ">fruits</span>
+        </button>
+      </div>
     </section>
 
 

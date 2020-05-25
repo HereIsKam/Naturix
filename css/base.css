@@ -79,3 +79,21 @@ body {
 }
 
 /* Buttons */
+.btn-general {
+  padding: 8.5px 42px;
+  border: 2px solid var(--colorButtonBorder);
+  font-size: 1rem;
+  font-weight: normal;
+  background-color: var(--colorButtonBright);
+  border-radius: 9999px;
+  text-transform: lowercase;
+}
+
+.btn-general-accent {
+  font-weight: 900;
+}
+
+.btn-general-selected {
+  background-color: var(--colorAccent);
+  color: var(--colorButtonBright);
+}
