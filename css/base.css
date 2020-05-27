@@ -13,6 +13,8 @@ a:hover {
   color: inherit;
 }
 
+
+
 html {}
 
 body {
@@ -80,20 +82,30 @@ body {
 
 /* Buttons */
 .btn-general {
-  padding: 8.5px 42px;
+  padding: 8.5px 0;
   border: 2px solid var(--colorButtonBorder);
   font-size: 1rem;
   font-weight: normal;
   background-color: var(--colorButtonBright);
   border-radius: 9999px;
   text-transform: lowercase;
+  width: 160px;
+  white-space: nowrap;
 }
 
 .btn-general-accent {
-  font-weight: 900;
+  font-weight: bold;
 }
 
 .btn-general-selected {
   background-color: var(--colorAccent);
   color: var(--colorButtonBright);
+  border: none;
+}
+
+.btn-general:hover,
+.btn-general:focus {
+  background-color: var(--colorAccent);
+  color: var(--colorButtonBright);
+  border: none;
 }
