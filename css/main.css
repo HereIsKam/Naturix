@@ -104,15 +104,21 @@
 /* Hero */
 .hero {
   position: relative;
-  z-index: 1;
 }
 
 .hero-container {
-  padding: 198px 65px 330px 65px;
+  position: absolute;
+  z-index: 9999;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 75px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
 }
 
 .hero-left {
-  transform: rotate(-90deg);
+  transform: rotate(-90deg) translate(-150%, -200%);
   white-space: nowrap;
   transform-origin: 50% 0;
 }
@@ -134,9 +140,6 @@
   margin: 0 8px 0 0;
 }
 
-
-
-
 .hero-picture {
   position: relative;
 }
@@ -146,7 +149,7 @@
   content: '100% Guarantee';
   font-size: 1rem;
   font-style: italic;
-  bottom: -40px;
+  bottom: 12px;
   left: 55%;
   white-space: nowrap;
 }
@@ -189,8 +192,6 @@
   margin-right: 5px;
 }
 
-.hero-right {}
-
 .hero-social a {
   font-size: 0.938rem;
   color: var(--colorDetails);
@@ -206,18 +207,42 @@
   width: 1px;
   height: 70px;
   background-color: var(--colorDetails);
-
 }
 
 .hero-slider {
-  position: absolute;
   width: 100%;
   height: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -10;
+  box-sizing: border-box;
 }
+
+.hero-slider-slide {
+  background: url('../img/hero-slider.jpg') center center / cover no-repeat;
+  padding: 198px 0 330px 0;
+  position: relative;
+}
+
+.hero-slider-slide::after {
+  content: '';
+  width: 250px;
+  height: 40px;
+  background-color: var(--colorBackground);
+  clip-path: ellipse(50% 50% at 50% 110%);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hero-bottom {
+  position: absolute;
+  bottom: 65px;
+  left: 0;
+  margin: 0 auto;
+  padding: 0 65px;
+  z-index: 10;
+  width: 100%;
+}
+
 
 .hero-slider-navigation {
   height: auto;
@@ -278,6 +303,10 @@
 }
 
 /* Products */
+.product-btns {
+  padding: 30px 0;
+}
+
 .products-container {
   padding: 15px 75px;
 }

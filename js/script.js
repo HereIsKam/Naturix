@@ -8,18 +8,16 @@ var mySwiper = new Swiper('.hero-slider', {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
-})
-var mySwiperProducts = new Swiper('.products-slider', {
+});
+
+var swiper = new Swiper('.products-slider', {
   // Optional parameters
   direction: 'horizontal',
   loop: true,
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.products-slider-button-prev',
-    prevEl: '.products-slider-button-next',
+  slidesPerView: 6,
+  spaceBetween: 30,
+  centeredSlides: true,
+  el: {
+    pagination: `.swiper-pagination`
   },
-  pagination: {
-    el: '.swiper-pagination',
-  },
-})
+});

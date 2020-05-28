@@ -28,35 +28,33 @@
     <!-- Header -->
     <header class="header">
       <div class="container-fluid header-container">
-        <div class="row">
-          <nav class="navbar d-flex justify-content-between align-items-center">
-            <a href="index.html" class="logo d-flex align-items-end">
-              <span class="logo-begin">naturix</span>
-              <span class="logo-mid">farmfood</span>
-              <span class="logo-end">organic food</span>
-            </a>
+        <nav class="navbar d-flex justify-content-between align-items-center">
+          <a href="index.html" class="logo d-flex align-items-end">
+            <span class="logo-begin">naturix</span>
+            <span class="logo-mid">farmfood</span>
+            <span class="logo-end">organic food</span>
+          </a>
 
-            <ul class="nav-bar d-flex">
-              <li>
-                <a href="#" class="nav-bar-item">Home</a>
-                <a href="#" class="nav-bar-item">About us</a>
-                <a href="#" class="nav-bar-item">Shop</a>
-                <a href="#" class="nav-bar-item">Blog</a>
-                <a href="#" class="nav-bar-item">Item</a>
-              </li>
-            </ul>
+          <ul class="nav-bar d-flex">
+            <li>
+              <a href="#" class="nav-bar-item">Home</a>
+              <a href="#" class="nav-bar-item">About us</a>
+              <a href="#" class="nav-bar-item">Shop</a>
+              <a href="#" class="nav-bar-item">Blog</a>
+              <a href="#" class="nav-bar-item">Item</a>
+            </li>
+          </ul>
 
-            <div class="nav-btns d-flex align-items-center">
-              <button class="nav-cart" data-count="2">
-                <span class="sr-only">Cart</span>
-              </button>
-              <span class="nav-summ">$2.170.00</span>
-              <button class="nav-burger">
-                <span class="sr-only">Menu</span>
-              </button>
-            </div>
-          </nav>
-        </div>
+          <div class="nav-btns d-flex align-items-center">
+            <button class="nav-cart" data-count="2">
+              <span class="sr-only">Cart</span>
+            </button>
+            <span class="nav-summ">$2.170.00</span>
+            <button class="nav-burger">
+              <span class="sr-only">Menu</span>
+            </button>
+          </div>
+        </nav>
       </div>
     </header>
 
@@ -64,8 +62,8 @@
     <main>
       <!-- Hero -->
       <section class="hero">
-        <div class="hero-container container-fluid">
-          <div class="row d-flex justify-content-between align-items-center">
+        <div class="hero-container">
+          <div class="row">
             <div class="col-1">
               <div
                 class="hero-left d-flex justify-content-center align-items-end"
@@ -73,26 +71,8 @@
                 <p class="hero-left-text text-uppercase">Summer organic 2016</p>
               </div>
             </div>
-            <div class="hero-mid text-center col-10">
-              <picture class="hero-picture distance-bottom-small">
-                <source type="image/webp" srcset="img/hero-organic.webp" />
-                <source type="image/png" srcset="img/hero-organic.png" />
-                <img src="img/hero-organic.png" alt="Organic food" />
-              </picture>
-              <h1 class="distance-bottom-small">
-                live <span class="hero-title-accent">organic</span> for live
-                <span class="hero-title-accent">healthy</span>
-              </h1>
-              <p class="hero-mid-text text-uppercase">
-                Organic fruits, vegetables, and lot more to your door
-              </p>
-              <a class="hero-btn">
-                <span class="hero-btn-text-accent">Shop</span>
-                Now
-              </a>
-            </div>
 
-            <div class="hero-right d-flex justify-content-end col-1">
+            <div class="hero-right d-flex justify-content-end col-1 offset-10">
               <div class="hero-social d-flex flex-column align-items-center">
                 <a
                   class="d-flex align-items-end justify-content-center fab fa-facebook-f"
@@ -117,33 +97,75 @@
                 >
               </div>
             </div>
+          </div>
+        </div>
 
-            <div class="swiper-container hero-slider">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <picture>
-                    <source type="image/webp" srcset="img/hero-slider.webp" />
-                    <source type="image/jpg" srcset="imghero-slider.jpg" />
-                    <img src="img/hero-organic.png" alt="Food organic market" />
-                  </picture>
-                </div>
-                <div class="swiper-slide">
-                  <picture>
-                    <source type="image/webp" srcset="img/hero-slider.webp" />
-                    <source type="image/jpg" srcset="imghero-slider.jpg" />
-                    <img src="img/hero-organic.png" alt="Food organic market" />
-                  </picture>
-                </div>
-                <div class="swiper-slide">
-                  <picture>
-                    <source type="image/webp" srcset="img/hero-slider.webp" />
-                    <source type="image/jpg" srcset="imghero-slider.jpg" />
-                    <img src="img/hero-organic.png" alt="Food organic market" />
-                  </picture>
-                </div>
-              </div>
+        <div class="swiper-container hero-slider container-fluid">
+          <div class="swiper-wrapper">
+            <div
+              class="hero-slider-slide swiper-slide d-flex flex-column align-items-center"
+            >
+              <picture class="hero-picture distance-bottom-small">
+                <source type="image/webp" srcset="img/hero-organic.webp" />
+                <source type="image/png" srcset="img/hero-organic.png" />
+                <img src="img/hero-organic.png" alt="Organic food" />
+              </picture>
+              <h1 class="distance-bottom-small">
+                live <span class="hero-title-accent">organic</span> for live
+                <span class="hero-title-accent">healthy</span>
+              </h1>
+              <p class="hero-mid-text text-uppercase">
+                Organic fruits, vegetables, and lot more to your door
+              </p>
+              <a class="hero-btn">
+                <span class="hero-btn-text-accent">Shop</span>
+                Now
+              </a>
+            </div>
+            <div
+              class="hero-slider-slide swiper-slide d-flex flex-column align-items-center"
+            >
+              <picture class="hero-picture distance-bottom-small">
+                <source type="image/webp" srcset="img/hero-organic.webp" />
+                <source type="image/png" srcset="img/hero-organic.png" />
+                <img src="img/hero-organic.png" alt="Organic food" />
+              </picture>
+              <h1 class="distance-bottom-small">
+                live <span class="hero-title-accent">organic</span> for live
+                <span class="hero-title-accent">healthy</span>
+              </h1>
+              <p class="hero-mid-text text-uppercase">
+                Organic fruits, vegetables, and lot more to your door
+              </p>
+              <a class="hero-btn">
+                <span class="hero-btn-text-accent">Shop</span>
+                Now
+              </a>
+            </div>
+            <div
+              class="hero-slider-slide swiper-slide d-flex flex-column align-items-center"
+            >
+              <picture class="hero-picture distance-bottom-small">
+                <source type="image/webp" srcset="img/hero-organic.webp" />
+                <source type="image/png" srcset="img/hero-organic.png" />
+                <img src="img/hero-organic.png" alt="Organic food" />
+              </picture>
+              <h1 class="distance-bottom-small">
+                live <span class="hero-title-accent">organic</span> for live
+                <span class="hero-title-accent">healthy</span>
+              </h1>
+              <p class="hero-mid-text text-uppercase">
+                Organic fruits, vegetables, and lot more to your door
+              </p>
+              <a class="hero-btn">
+                <span class="hero-btn-text-accent">Shop</span>
+                Now
+              </a>
             </div>
           </div>
+        </div>
+
+        <div class="hero-bottom">
           <div class="row d-flex justify-content-between align-items-center">
             <div class="hero-lower d-flex align-items-center">
               <span class="hero-lower-left">&copy; naturix</span>
