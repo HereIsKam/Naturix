@@ -117,9 +117,8 @@
 }
 
 .hero-left {
-  transform: rotate(-90deg) translate(-150%, -200%);
-  white-space: nowrap;
-  transform-origin: 50% 0;
+  transform: rotate(-90deg) translateX(-50%);
+  transform-origin: 10px 50%;
 }
 
 .hero-left-text {
@@ -249,27 +248,23 @@
   position: relative;
 }
 
-.swiper-button-prev::after,
-.swiper-button-next::after {
-  display: none;
-}
 
-.swiper-button-prev,
-.swiper-button-next {
+.hero-button-prev,
+.hero-button-next {
   width: 35px;
   height: 24px;
   background-color: var(--colorButtonBright);
   font-size: 0.625rem;
   color: var(--colorHeroSliderArrows);
-  position: static;
+  cursor: pointer;
 }
 
-.swiper-button-prev {
+.hero-button-prev {
   border-radius: 999px 0 0 999px;
   margin: 0 1px 0 0;
 }
 
-.swiper-button-next {
+.hero-button-next {
   border-radius: 0 999px 999px 0;
   margin: 0;
 }
@@ -311,15 +306,15 @@
 .product-btn-hov:focus {
   background-color: var(--colorAccent);
   color: var(--colorButtonBright);
-  border: none;
+  border-color: transparent;
 }
 
 .products-container {
-  padding: 15px 75px;
+  padding: 15px 75px 270px 75px;
 }
 
 .products-slider {
-  padding: 5px 15px;
+  padding: 30px 20px;
 }
 
 .products-slider-slide {
@@ -328,6 +323,12 @@
   border-radius: 15px;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.55);
   margin-right: 30px;
+}
+
+.products-slider-slide:hover,
+.products-slider-slide:focus {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 7px 7px rgba(0, 0, 0, 0.2);
 }
 
 .products-pic img {
@@ -357,15 +358,26 @@
   color: var(--colorHeroBottom);
 }
 
+.products-pagination {}
+
+.products-pagination>.swiper-pagination-bullet {
+  width: 50px;
+  height: 8px;
+  background-color: var(--colorProductsBullet);
+  margin: 0 .5px;
+}
+
+.products-pagination>.swiper-pagination-bullet-active {
+  background-color: var(--colorProductsBulletAcc:);
+}
+
 /* About */
 
 .about {
   padding: 125px 0 315px 0;
-  background: linear-gradient(
-    to bottom,
-    var(--colorAboutBg) 0%,
-    var(--colorAboutBg) 100%
-  );
+  background: linear-gradient(to bottom,
+      var(--colorAboutBg) 0%,
+      var(--colorAboutBg) 100%);
   color: var(--colorAboutCardText);
   position: relative;
 }
@@ -390,7 +402,7 @@
   width: 19px;
   height: 31px;
   position: absolute;
-  top: -17px;
+  top: -16px;
   left: 101px;
 }
 
